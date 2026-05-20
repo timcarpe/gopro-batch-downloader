@@ -9,7 +9,7 @@ python -m venv .venv
 if %errorlevel% neq 0 (
     echo.
     echo [ERROR] Python is not installed or not in your system PATH.
-    echo Please install Python 3.10 or newer (make sure to check "Add Python to PATH" during installation).
+    echo Please install Python 3.10 or newer - make sure to check "Add Python to PATH" during installation.
     echo.
     pause
     exit /b
