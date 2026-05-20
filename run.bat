@@ -15,7 +15,7 @@ if "%LIMIT%"=="" (
     echo How many files would you like to download?
     echo.
     echo   - Press ENTER to download everything
-    echo   - Or type a number (e.g. 10) to download only that many
+    echo   - Or type a number, e.g. 10, to download only that many
     echo.
     set /p LIMIT="Your choice: "
 )
