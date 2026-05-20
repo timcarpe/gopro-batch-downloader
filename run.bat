@@ -9,14 +9,22 @@ if not exist .venv (
     call install.bat
 )
 
-echo How many files would you like to download?
-echo.
-echo   - Press ENTER to download everything
-echo   - Or type a number (e.g. 10) to download only that many
-echo.
-set /p LIMIT="Your choice: "
+set LIMIT=%1
 
 if "%LIMIT%"=="" (
+    echo How many files would you like to download?
+    echo.
+    echo   - Press ENTER to download everything
+    echo   - Or type a number (e.g. 10) to download only that many
+    echo.
+    set /p LIMIT="Your choice: "
+)
+
+if "%LIMIT%"=="" (
+    echo.
+    echo Downloading ALL files...
+    .venv\Scripts\python main.py
+) else if "%LIMIT%"=="all" (
     echo.
     echo Downloading ALL files...
     .venv\Scripts\python main.py
