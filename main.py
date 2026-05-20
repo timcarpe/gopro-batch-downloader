@@ -281,3 +281,7 @@ def main():
         page += 1
 
     print(f"\nFinished! Successfully processed {downloaded_count} files.")
+
+
+if __name__ == "__main__":
+    main()
